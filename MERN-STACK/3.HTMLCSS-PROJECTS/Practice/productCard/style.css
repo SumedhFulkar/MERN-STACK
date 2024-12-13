@@ -1,0 +1,141 @@
+/* googlefonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #e6e6e6;
+    align-items: center;
+}
+.container{
+    display: flex;
+    max-width: 720px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    justify-content: space-between;
+    position: relative;
+}
+.container::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 12px 12px 0;
+    clip-path: circle(65% at right 35%);
+    background: linear-gradient(125deg,#fd9bb0 10%, #F6416C 100%);
+}
+.container .box.one{
+    padding: 35px 5px 0px 35px;
+}
+.box.one .details .topic{
+    font-size: 30px;
+    font-weight: 500;
+}
+.box.one .details p{
+    color: #737373;
+    font-size: 13px;
+    font-weight: 500;
+}
+.box.one .details .rating{
+    color: #fd9bb0;
+}
+.box.one .details .price-box{
+    margin-top: 16px;
+}
+.box.one .price-box .discount{
+    font-size: 20px;
+    color: #737373;
+    margin: 10px 0 0 12px;
+    position: relative;
+}
+.price-box .discount::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background: #737373;
+    top: 50%;
+    left: -8px;
+}
+.details .price-box .price{
+    color: #fc6989;
+    font-size: 30px;
+}
+.details .button1{
+    margin-top: 55px;
+    margin-bottom: 5px;
+}
+.box.one .button1 button{
+    outline: none;
+    background: #00e6e6;
+    padding: 8px 16px;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.box.one .button1 button:hover{
+    transform: scale(0.98);
+}
+.container .box.two .image-box{
+    position: relative;
+    text-align: right;
+    right: 0;
+    bottom: 32px;
+}
+.container .box.two .image{
+    height: 340px;
+    width: 430px;
+}
+.box.two .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box.two .info{
+    margin: 0 35px 0 0;
+}
+.box.two .info .brand{
+    font-size: 17px;
+    font-weight: 600;
+    color: #c9032e;
+}
+.box.two .info .name{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.box.two .info .shipping{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.box.two .info .button2{
+    margin: 17px 0;
+}
+.box.two .info .button2 button{
+    outline: none;
+    border: 1px solid #fff;
+    padding: 8px 16px;
+    /* color: #fff; */
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius:6px;
+    border: 1px solid #fff;
+    background: transparent;
+}
