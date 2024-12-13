@@ -1,0 +1,114 @@
+/* googlefonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+header .logo{
+    height: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 165px;
+}
+header nav ul{
+    display:inline-flex;
+}
+header nav ul li{
+    list-style: none;
+    margin-left: 80px;
+}
+header nav ul li:first-child{
+    margin-left: 30px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 35px 7px 22px 7px;
+    position: relative;
+}
+header nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background: #d9f688;
+    transition: height 0.5s;
+}
+header nav ul li a:hover::before{
+    height: 100px;
+}
+header .menu{
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 165px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+body {
+    margin-top: 75px; /* Add space equal to header height to avoid overlap */
+}
+
+main{
+    display: flex;
+    z-index: 3;
+    align-items: center;
+}
+main .content{
+    width: 50%;
+}
+main .dish{
+    width: 50%;
+    position: relative;
+    height: 830px;
+}
+main .content p{
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: 125px;
+}
+main .content button{
+    background-color: #d9f688;
+    border: none;
+    margin-left: 125px;
+    margin-top: 30px;
+    padding: 20px 50px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius:50px ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+main .dish .food-pic{
+    position: absolute;
+    height: 800px;
+    z-index: 1;
+}
+main .dish .recipe-vid{
+    position: absolute;
+    margin-top: 550px;
+    height: 230px;
+    z-index:2; /* Ensure it stays above other content */
+    cursor: pointer;
+}

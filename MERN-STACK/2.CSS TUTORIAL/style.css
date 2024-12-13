@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+
+span{
+    color: red;
+}
+
+h1{
+    color: blue;
+}
+
+.heading{
+    color: chocolate;
+    border: 2px solid black;
+}
+
+#heading{
+    color: aqua;
+    border: 2px solid black;
+}
